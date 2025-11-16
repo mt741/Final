@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gallery</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" href="images/icon-web.png" type="image/png" />
+  </head>
+  <body>
+    <header class="simple-header">
+      <div class="main-container">
+        <div class="container">
+          <a href="#"
+            ><img src="images/logo.png" alt="Company Logo" class="logo"
+          /></a>
+          <div class="hamburger">☰</div>
+          <nav class="menu">
+            <ul>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="items.html">Our items</a></li>
+              <li><a href="bestsellers.html">Bestsellers</a></li>
+              <li><a href="ingredients.html">Ingredients</a></li>
+              <li><a href="product-cmprsn.html">Product Comparison</a></li>
+              <li><a href="gallery.html">Gallery</a></li>
+              <li><a href="faq.html">FAQ</a></li>
+              <li><a href="contact.html">Contact us</a></li>
+            </ul>
+          </nav>
+          <div class="icons">
+            <a href="#"><img src="images/heart.png" alt="heart-icon" /></a>
+            <a href="#"><img src="images/bag.png" alt="bag-icon" /></a>
+          </div>
+        </div>
+      </div>
+    </header>
+    <div class="main-container">
+      <main>
+        <div class="category-filters">
+          <button data-category="all">All</button>
+          <button data-category="products">Products</button>
+          <button data-category="lifestyles">Lifestyle</button>
+          <button data-category="ingredients">Ingredients</button>
+        </div>
+
+        <div id="gallery" class="gallery-grid">
+          <div class="g-card" data-category="products">
+            <img src="images/serene-drop.png" alt="Product-1" />
+            <p>Serene Drop</p>
+          </div>
+          <div class="g-card" data-category="lifestyles">
+            <img src="images/lifestyle1.jpg" alt="Lifestyle-1" />
+            <p>Customer with Serene Drop</p>
+          </div>
+          <div class="g-card" data-category="ingredients">
+            <img src="images/rose.png" alt="Ingredient-1" />
+            <p>Rose ingredient</p>
+          </div>
+        </div>
+
+        <!-- Lightbox -->
+        <div id="lightbox" class="lightbox hide">
+          <button id="lb-close" style="cursor: pointer">✕</button>
+          <button id="lb-prev" style="cursor: pointer">◀</button>
+          <img id="lb-img" style="cursor: pointer" src="" alt="" />
+          <button id="lb-next" style="cursor: pointer">▶</button>
+          <!-- We need to put here our selected image -->
+        </div>
+      </main>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="main.js"></script>
+  </body>
+</html>

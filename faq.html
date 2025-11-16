@@ -191,24 +191,5 @@
         </div>
       </div>
     </footer>
-    <script>
-      // accordion set up using jQuery
-      $(document).ready(function () {
-        // slideToggle
-        $(".accordion-header").click(function () {
-          const content = $(this).next(".accordion-content");
-
-          // Slide toggle the clicked item
-          content.stop(true, true).slideToggle(300);
-
-          // Close other items
-          $(".accordion-content").not(content).slideUp(300);
-
-          // Toggle active class
-          $(this).parent(".accordion-item").toggleClass("active");
-          $(".accordion-item").not($(this).parent()).removeClass("active");
-        });
-      });
-    </script>
   </body>
 </html>
